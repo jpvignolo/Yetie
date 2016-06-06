@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "376768584841",
+    "firebase_url": "https://project-5409796454043349927.firebaseio.com",
+    "project_id": "project-5409796454043349927",
+    "storage_bucket": "project-5409796454043349927.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376768584841:android:6e38c3a30f228615",
+        "android_client_info": {
+          "package_name": "com.yetie.yeties"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376768584841-n9ioa958bsk61ru9iu2b6bl25m5hcdde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqCDXQC3flM7Y5EASjjGsmTkpSRNsIFeg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376768584841:android:d34f7d28bfbdb790",
+        "android_client_info": {
+          "package_name": "com.yetie.yetie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376768584841-n9ioa958bsk61ru9iu2b6bl25m5hcdde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqCDXQC3flM7Y5EASjjGsmTkpSRNsIFeg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

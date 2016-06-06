@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Yetie</string>
+    <string name="welcome">Bienvenue sur Yetie.</string>
+    <string name="account_create">CREER UN COMPTE</string>
+    <string name="presentation">Trouvez du travail à vos conditions.</string>
+    <string name="presentation_2">Travaillez où et quand vous voulez.</string>
+    <string name="presentation_point_1">Inscritopn gratuite, sans CV ni entretien</string>
+    <string name="presentation_point_2">Recevez des offres, proposez votre tarif, s\'il est accepté la mission est pour vous</string>
+    <string name="presentation_point_3">Travaillez, notez, vous etes payés</string>
+</resources>
