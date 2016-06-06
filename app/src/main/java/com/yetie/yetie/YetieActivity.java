@@ -2,6 +2,7 @@ package com.yetie.yetie;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,15 +29,13 @@ public class YetieActivity extends AppCompatActivity implements LoginFragmentLis
         Log.d("YetieActivity","onAccountCreate");
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = new RegisterNameFragment();
-        fm.beginTransaction().setCustomAnimations(R.anim.enter_from_right,
-                R.anim.exit_to_left, 0, 0).add(R.id.root, fragment).commit();
+        fm.beginTransaction().setTransition(FragmentTransaction.TRANSIT_NONE).add(R.id.root, fragment).addToBackStack("RegisterNameFragment").commit();
     }
 
     @Override
     public void onNameRegister() {
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = new RegisterPhoneFragment();
-        fm.beginTransaction().setCustomAnimations(R.anim.enter_from_right,
-                R.anim.exit_to_left, 0, 0).add(R.id.root, fragment).commit();
+        fm.beginTransaction().setTransition(FragmentTransaction.TRANSIT_NONE).add(R.id.root, fragment).addToBackStack("RegisterPhoneFragment").commit();
     }
 }
