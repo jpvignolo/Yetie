@@ -64,7 +64,12 @@ public class LoginFragment extends Fragment implements Animator.AnimatorListener
         presentationPoint2 = (LinearLayout) v.findViewById(R.id.presentation_point_2);
         presentationPoint3 = (LinearLayout) v.findViewById(R.id.presentation_point_3);
         btnAccountCreate = (Button) v.findViewById(R.id.btn_account_create);
-
+        btnAccountCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCallback.onAccountCreate();
+            }
+        });
         return v;
     }
 

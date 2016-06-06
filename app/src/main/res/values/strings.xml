@@ -4,7 +4,12 @@
     <string name="account_create">CREER UN COMPTE</string>
     <string name="presentation">Trouvez du travail à vos conditions.</string>
     <string name="presentation_2">Travaillez où et quand vous voulez.</string>
-    <string name="presentation_point_1">Inscritopn gratuite, sans CV ni entretien</string>
+    <string name="presentation_point_1">Inscription gratuite, sans CV ni entretien</string>
     <string name="presentation_point_2">Recevez des offres, proposez votre tarif, s\'il est accepté la mission est pour vous</string>
     <string name="presentation_point_3">Travaillez, notez, vous etes payés</string>
+    <string name="whatname">Quel est votre nom ?</string>
+    <string name="yourname">Votre nom</string>
+    <string name="yourfirstname">Votre prénom</string>
+    <string name="whatphone">Et votre mobile ?</string>
+    <string name="registerphone_txt">Nous avons besoin de votre mobile pour que les managers des missions acceptées puissent vous contacter et que nous sachions comment vous joindre.</string>
 </resources>
