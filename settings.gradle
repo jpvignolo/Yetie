@@ -1,1 +1,3 @@
-include ':app'
+include ':app', 'usefullviews'
+project(':usefullviews').projectDir = new File(settingsDir, '../UsefullViews/views')
+

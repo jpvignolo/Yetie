@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 repositories {
+    mavenCentral()
     maven {
         url  "http://dl.bintray.com/drummer-aidan/maven/"
     }
@@ -31,6 +32,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile project(':usefullviews')
 }
 
 apply plugin: 'com.google.gms.google-services'

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +13,30 @@ import android.widget.ImageButton;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.jipouille.usefullviews.views.EditTextPlusPhoneNumber;
 import com.yetie.yetie.R;
 import com.yetie.yetie.listeners.LoginFragmentListener;
+
 
 /**
  * Created by jp on 06/06/16.
  */
 public class RegisterPhoneFragment extends Fragment implements MaterialDialog.SingleButtonCallback {
+    private static final String TAG = "RegisterPhoneFragment";
     LoginFragmentListener mCallback;
-    EditText number;
+    EditTextPlusPhoneNumber number;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_register_phone, container, false);
+
+
+        number = (EditTextPlusPhoneNumber)v.findViewById(R.id.input_number);
+        PhoneNumberFormattingTextWatcher watcher = new PhoneNumberFormattingTextWatcher();
+        number.addTextChangedListener(watcher);
         ImageButton next = (ImageButton)v.findViewById(R.id.btn_next);
-        number = (EditText)v.findViewById(R.id.input_number);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
