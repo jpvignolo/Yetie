@@ -38,4 +38,9 @@ public class YetieActivity extends AppCompatActivity implements LoginFragmentLis
         Fragment fragment = new RegisterPhoneFragment();
         fm.beginTransaction().setTransition(FragmentTransaction.TRANSIT_NONE).add(R.id.root, fragment).addToBackStack("RegisterPhoneFragment").commit();
     }
+
+    @Override
+    public void onPhoneRegister(String number) {
+
+    }
 }

@@ -7,4 +7,6 @@ public interface LoginFragmentListener {
     void onAccountCreate();
 
     void onNameRegister();
+
+    void onPhoneRegister(String number);
 }

@@ -12,4 +12,6 @@
     <string name="yourfirstname">Votre prénom</string>
     <string name="whatphone">Et votre mobile ?</string>
     <string name="registerphone_txt">Nous avons besoin de votre mobile pour que les managers des missions acceptées puissent vous contacter et que nous sachions comment vous joindre.</string>
+    <string name="txt_confirm_number">Nous vous envoyons un SMS contenant un code pour vérifier le numéro de téléphone</string>
+    <string name="ok">OK</string>
 </resources>

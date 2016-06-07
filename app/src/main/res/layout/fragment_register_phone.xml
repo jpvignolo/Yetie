@@ -15,7 +15,7 @@
         android:textColor="@android:color/white"
         android:layout_marginTop="26dp"/>
     <EditText
-        android:id="@+id/input_prenom"
+        android:id="@+id/input_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -27,7 +27,7 @@
     android:layout_width="60dp"
     android:layout_height="60dp"
     android:text="New Button"
-    android:id="@+id/OkBt"
+    android:id="@+id/btn_next"
     android:elevation="10dp"
     android:src="@drawable/ic_navigate_next_white_24dp"
     android:background="@drawable/circle"
