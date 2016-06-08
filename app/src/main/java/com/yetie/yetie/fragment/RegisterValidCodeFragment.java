@@ -20,7 +20,7 @@ import com.yetie.yetie.listeners.LoginFragmentListener;
 /**
  * Created by jp on 06/06/16.
  */
-public class RegisterPhoneFragment extends Fragment implements MaterialDialog.SingleButtonCallback {
+public class RegisterValidCodeFragment extends Fragment implements MaterialDialog.SingleButtonCallback {
     private static final String TAG = "RegisterPhoneFragment";
     LoginFragmentListener mCallback;
     EditTextPlusPhoneNumber number;
@@ -29,22 +29,12 @@ public class RegisterPhoneFragment extends Fragment implements MaterialDialog.Si
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_register_phone, container, false);
+        View v = inflater.inflate(R.layout.fragment_register_valid_code, container, false);
 
-
-        number = (EditTextPlusPhoneNumber)v.findViewById(R.id.input_number);
-        PhoneNumberFormattingTextWatcher watcher = new PhoneNumberFormattingTextWatcher();
-        number.addTextChangedListener(watcher);
         ImageButton next = (ImageButton)v.findViewById(R.id.btn_next);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String confirm = getString(R.string.txt_confirm_number)+" "+number.getText().toString();
-                new MaterialDialog.Builder(RegisterPhoneFragment.this.getContext())
-                        .content(confirm)
-                        .positiveText(R.string.ok)
-                        .onPositive(RegisterPhoneFragment.this)
-                        .show();
             }
         });
         return v;

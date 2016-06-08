@@ -5,6 +5,9 @@ repositories {
     maven {
         url  "http://dl.bintray.com/drummer-aidan/maven/"
     }
+    maven  {
+        url  "http://dl.bintray.com/glomadrian/maven"
+    }
 }
 
 android {
@@ -33,6 +36,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.afollestad.material-dialogs:core:0.8.5.9'
     compile project(':usefullviews')
+    compile 'com.github.glomadrian:CodeInput:1.1@aar'
 }
 
 apply plugin: 'com.google.gms.google-services'

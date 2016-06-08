@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YetieYellow">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whatphone"
+        android:textSize="@dimen/txt_presentation"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="26dp"/>
+    <com.github.glomadrian.codeinputlib.CodeInput xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:underline_color="#457ad1"
+        app:underline_selected_color="#9e1ace"
+        app:text_color="#b12eff"
+        app:hint_color="#77ce9d"
+        app:hint_text="Pin code"
+        app:codes="4"
+        />
+    <ImageButton style="@style/AppTheme"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:text="New Button"
+    android:id="@+id/btn_next"
+    android:elevation="10dp"
+    android:src="@drawable/ic_navigate_next_white_24dp"
+    android:background="@drawable/circle"
+        android:layout_gravity="right"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/validcode_txt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_presentation_smaller"/>
+    </LinearLayout>

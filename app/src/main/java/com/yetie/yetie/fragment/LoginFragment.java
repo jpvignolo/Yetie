@@ -174,12 +174,13 @@ public class LoginFragment extends Fragment implements Animator.AnimatorListener
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        presentationPointContainer.setVisibility(View.GONE);
+                        /*presentationPointContainer.setVisibility(View.GONE);
                         presentationTxt2.setVisibility(View.GONE);
                         presentationTxt.setAlpha(1);
                         presentationTxt.setText(getText(R.string.welcome));
                         presentationContainer1.setAlpha(1);
-                        btnAccountCreate.setVisibility(View.VISIBLE);
+                        btnAccountCreate.setVisibility(View.VISIBLE);*/
+                        mCallback.onAccountCreate();
                     }
                 }, 1000);
                 break;

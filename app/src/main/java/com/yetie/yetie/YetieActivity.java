@@ -10,6 +10,7 @@ import android.util.Log;
 import com.yetie.yetie.fragment.LoginFragment;
 import com.yetie.yetie.fragment.RegisterNameFragment;
 import com.yetie.yetie.fragment.RegisterPhoneFragment;
+import com.yetie.yetie.fragment.RegisterValidCodeFragment;
 import com.yetie.yetie.listeners.LoginFragmentListener;
 
 public class YetieActivity extends AppCompatActivity implements LoginFragmentListener {
@@ -28,7 +29,7 @@ public class YetieActivity extends AppCompatActivity implements LoginFragmentLis
     public void onAccountCreate() {
         Log.d("YetieActivity","onAccountCreate");
         FragmentManager fm = getSupportFragmentManager();
-        Fragment fragment = new RegisterNameFragment();
+        Fragment fragment = new RegisterPhoneFragment();
         fm.beginTransaction().setTransition(FragmentTransaction.TRANSIT_NONE).add(R.id.root, fragment).addToBackStack("RegisterNameFragment").commit();
     }
 
@@ -41,6 +42,8 @@ public class YetieActivity extends AppCompatActivity implements LoginFragmentLis
 
     @Override
     public void onPhoneRegister(String number) {
-
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = new RegisterValidCodeFragment();
+        fm.beginTransaction().setTransition(FragmentTransaction.TRANSIT_NONE).add(R.id.root, fragment).addToBackStack("RegisterPhoneFragment").commit();
     }
 }
